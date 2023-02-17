@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head>       
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" href="estilos/estilo.css">
+        <script src="js/javascript.js" defer></script>
         <title>Mi portafolio - Principal</title>
     </head>
     <body>
         <div class="container" id="top">
-            <header>
-                <div class="logo">
-                    Portafolio
-                </div>
+            <header>                
                 <div class="links">                    
                         <div><a href="#top">Principal</a></div>
-                        <div><a href="#proyectos">Mis Proyectos</a></div>
+                        <div><a href="#curriculum">C.V.</a></div>
                         <div><a href="#sobreMi">Sobre Mi</a></div>
+                        <div><a href="#proyectos">Mis Proyectos</a></div>                        
                         <div><a href="#contacto">Contacto</a></div>                    
                 </div>
-            </header>
+                <div class="logo">
+                    <form action="">
+                        <fieldset>
+                            <!-- Los fieldset y labels aca son solo por accesibilidad -->
+                            <legend>Elija su esquema de colores</legend>
+                            <div class="tema-default">
+                                <label for="default">default</label>
+                                <input type="radio" id="default" class="tema" name="tema" checked>
+                            </div>
+                            <div class="tema-claro">
+                                <label for="claro">Claro</label>
+                                <input type="radio" id="claro" class="tema" name="tema">
+                            </div>
+                            <div class="tema-oscuro">
+                                <label for="oscuro">Oscuro</label>
+                                <input type="radio" id="oscuro" class="tema" name="tema">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>                
+            </header>                     
             <main>
                 <div id="sobreMi">
                     <img src="assets/Mi foto.jpg" alt="Una foto de Santiago Iparraguirre">
@@ -137,6 +156,77 @@
                     </div>
                 </div>
             </main>
+            <div id="curriculum">
+                <div class="grupo1"> 
+                    <p class="titulo-cv">Experiencia laboral:</p>
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Telefonista</button>
+                        <div class="contenido-oculto">
+                            <p>Julio 2011 a Enero 2022 – Cootelpa.</p> 
+                            <p>Cargo: Telefonista.</p>
+                            <p>Tareas: Atención de clientes, gestión de turnos de empleados, gestión de contabilidad diaria en la caja de ingresos y egresos.</p>
+                        </div>
+                    </div>    
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Pistero</button>
+                        <div class="contenido-oculto">
+                            <p>Enero 2010 a Junio 2011 – Ferrari LTDA.</p>
+                            <p>Cargo: Pistero.</p>
+                            <p>Tareas: Atención de clientes, lavado de vehículos, encargado del mini-mercado.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="grupo2">
+                    <p class="titulo-cv">Formación:</p>
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Formación complementaria</button>
+                        <div class="contenido-oculto">
+                            <p>Informática: Autoformado en estructura y funcionamiento de OS GNU/Linux, Diseño grafico con herramientas como Corel y Canva, conocimientos en desarrollo en Front End con tecnologías como HTML, CSS, JavaScript.</p>
+                            <p>Inglés: Intermediate Level aprobado. Instituto Summit 2001 - 2006 </p>
+                        </div>
+                    </div>    
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Primaria</button>
+                        <div class="contenido-oculto">
+                            <p>1996 – 2002</p>
+                            <p>Primaria. Escuela Nº 195.</p>
+                        </div>
+                    </div>
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Secundaria</button>
+                        <div class="contenido-oculto">
+                            <p>2006 - 2009</p>
+                            <p>Bachillerato Orientación Derecho, Sexto año incompleto. Liceo Nº3 Dámaso Antonio Larrañaga.</p>
+                        </div>
+                    </div>  
+                </div>   
+                <div class="grupo3">
+                    <p class="titulo-cv">Referencias personales:</p>                       
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Referencia</button>
+                        <div class="contenido-oculto">
+                            <p>Sr. Franco Torres</p>
+                            <button type="button" class="acordeon interno">Contactar</button>
+                            <div class="contenido-oculto">
+                                <p>franco.torres1705@gmail.com</p>
+                            </div>       
+                        </div>
+                    </div> 
+                </div>
+                <div class="grupo4">
+                    <p class="titulo-cv">Referencias familiares:</p>  
+                    <div id="subgrupo">                       
+                        <button type="button" class="acordeon">Referencia</button>
+                        <div class="contenido-oculto">
+                            <p>Sra. Gabriela Suero (Jubilada)</p>
+                            <button type="button" class="acordeon interno">Contactar</button>
+                            <div class="contenido-oculto">
+                                <p>Teléfono: 099724958</p>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>    
+            </div>
             <footer>
                 <div id="contacto">
                     <div class="pie">Contacto:</div>
